@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#0365B1</color>
+    <color name="colorAccent">#1BD5D8</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+
+    <!-- other colors -->
+    <color name="colorPrimaryLight">#6BB9F7</color>
+    <color name="colorPrimaryLight2">#83C4F8</color>
+    <color name="colorGreen">#36F320</color>
+    <color name="colorGreenLight">#7AFD6B</color>
+    <color name="colorGreenDark">#119402</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorRedLight">#F34B4B</color>
+    <color name="colorGray">#3f3f3f</color>
+    <color name="colorGrayDark">#2c2c2c</color>
+    <color name="colorGrayLight">#707070</color>
+    <color name="colorGrayLight2">#BEBDBD</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteLight">#F1EFEF</color>
+    <color name="colorRedGooglePlus">#fb2525</color>
+    <color name="colorBlueLight">#79c7f1</color>
+
+    <!-- colors status -->
+    <color name="colorInfo">#2466F3</color>
+    <color name="colorSuccess">#28A220</color>
+    <color name="colorWarn">#D57604</color>
+    <color name="colorError">#B10505</color>
+    <color name="colorOutdated">#5C047E</color>
+    <color name="colorNever">#867C7C</color>
+    <color name="colorNomon">#353333</color>
+    
+    <!-- colors itens -->
+    <color name="colorLine">#EAEAEA</color>
+    <color name="colorGray2">#353334</color>
+    <color name="colorGrayItens">#4D4D4D</color>
+    <color name="colorGraySubItens">#999999</color>
+    <color name="colorGray3">#666666</color>
+    <color name="colorItemMenuDrawer">#4d4d4d</color>
+</resources>

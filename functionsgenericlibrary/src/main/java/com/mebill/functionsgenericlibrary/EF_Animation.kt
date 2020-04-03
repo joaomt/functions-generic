@@ -6,7 +6,6 @@ import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
-import recod.company.soft.mebill.R
 
 fun View.loadAnim(anim: Int) {
     startAnimation(AnimationUtils.loadAnimation(this.context, anim))
@@ -29,7 +28,7 @@ fun Context.showToastLengthLong(msg: String) {
 }
 @SuppressLint("ResourceAsColor")
 fun View.showSnackBar(message:String, colorRes : Int){
-    Snackbar.make(this,message,Snackbar.LENGTH_LONG).also {snackbar ->
+    Snackbar.make(this,message,Snackbar.LENGTH_LONG).also { snackbar ->
         snackbar.view.setBackgroundColor(colorRes)
         snackbar.setActionTextColor(context.resources.getColor(R.color.colorWhite))
         snackbar.setAction("OK"){
