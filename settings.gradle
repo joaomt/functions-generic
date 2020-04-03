@@ -1,0 +1,2 @@
+include ':app', ':functionsgenericlibrary'
+rootProject.name='Function Generic'
