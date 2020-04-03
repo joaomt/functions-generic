@@ -1,2 +1,2 @@
-include ':app', ':functionsgenericlibrary'
+include ':functionsgenericlibrary'
 rootProject.name='Function Generic'
