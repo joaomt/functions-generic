@@ -5,12 +5,15 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
 import android.content.pm.PackageManager
+import android.graphics.Typeface
 import android.net.ConnectivityManager
 import android.os.Build
 import android.os.Build.MANUFACTURER
 import android.os.Build.MODEL
 import android.os.VibrationEffect
 import android.os.Vibrator
+import android.text.SpannableStringBuilder
+import android.text.style.ForegroundColorSpan
 import android.util.Log
 import android.util.TypedValue
 import android.view.WindowManager
@@ -76,6 +79,30 @@ fun Any.getDeviceName(): String =
 fun Context.isPermissionLocationAlow() : Boolean{
     return ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
 }
+
 fun Activity.requestPermissionLocation(){
     ActivityCompat.requestPermissions(this , arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),REQUEST_PERMISSION_LOCATION)
+}
+
+fun Context.setSpanFontCustom(
+    textToChange: String,
+    fullText: String, targetColor: Int, nameFontToChange: String
+): SpannableStringBuilder? {
+    try{
+
+        val start = fullText.indexOf(textToChange)
+        val end = fullText.indexOf(textToChange)+textToChange.length
+
+
+        val fontTypeFace = Typeface.createFromAsset(assets, nameFontToChange)//"opensans_bold.ttf"
+
+        val span = SpannableStringBuilder(fullText).apply {
+            setSpan(ForegroundColorSpan(targetColor), start,end,0)
+            setSpan(CustomTypefaceSpan("",fontTypeFace),start,end,0)
+        }
+        return span
+    }catch (ex : Exception){
+        ex.printStackTrace()
+        return null
+    }
 }

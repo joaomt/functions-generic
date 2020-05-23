@@ -11,8 +11,8 @@ fun View.loadAnim(anim: Int) {
     startAnimation(AnimationUtils.loadAnimation(this.context, anim))
 }
 
-fun View.startTranslationY(value: Float) {
-    this.animate().translationY(value).start()
+fun View.startTranslationY(value: Float, duration: Long) {
+    this.animate().translationY(value).setDuration(duration).start()
 }
 
 fun View.startTranslationX(value: Float, duration: Long) {
